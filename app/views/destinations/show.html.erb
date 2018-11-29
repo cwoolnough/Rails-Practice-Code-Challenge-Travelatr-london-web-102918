@@ -1,0 +1,8 @@
+<h1>Destination: <%= @destination.name %></h1>
+
+<hr>
+
+<% @destination.posts.each do |post| %>
+    <p>Post Title: <%= post.title %></p>
+    <p>Post Content: <%= post.content %></p>
+<% end %>

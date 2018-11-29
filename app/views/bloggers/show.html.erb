@@ -1,0 +1,14 @@
+<h1>Blogger Name: <%= @blogger.name %></h1>
+<hr>
+
+<p>Bio: <%= @blogger.bio %></p>
+<p>Age: <%= @blogger.age %></p>
+
+
+
+<h2>Total Number of Likes: <%= @blogger.total_likes %> </h2>
+
+<h2>Most Likes: <%= link_to @post.title, post_path(@post) %> </h2>
+
+
+<%= link_to "All Bloggers", bloggers_path %>
